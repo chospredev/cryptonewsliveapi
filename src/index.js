@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("This is Crypto News API!");
+  res.send("This is Crypto News Live API!");
 });
 app.use("/crypto", [bitcoinRouter, ethereumRouter]);
 

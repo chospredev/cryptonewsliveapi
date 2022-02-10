@@ -8,7 +8,7 @@ const bitcoinRouter = require("../routes/bitcoin.route");
 const ethereumRouter = require("../routes/ethereum.route");
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = 5232;
 
 app.use(express.json());
 app.use(cors());

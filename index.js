@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 app.get("/", (req, res) => {
-  res.send("This is Crypto News Live API!");
+  res.json();
 });
 app.use("/crypto", [bitcoinRouter, ethereumRouter]);
 

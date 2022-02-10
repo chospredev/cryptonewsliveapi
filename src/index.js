@@ -13,6 +13,9 @@ const PORT = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("This is Crypto News API!");
+});
 app.use("/crypto", [bitcoinRouter, ethereumRouter]);
 
 app.listen(PORT, () => console.log(`Server started successfully at: ${PORT}`));

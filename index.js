@@ -7,9 +7,6 @@ const ethereumRouter = require("./routes/ethereum.route");
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-app.use(express.json());
-app.use(cors());
-
 app.get("/", (req, res) => {
   res.send("This is Crypto News Live API!");
 });

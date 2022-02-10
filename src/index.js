@@ -1,8 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-require("dotenv").config({
-  path: "./.env",
-});
 
 const bitcoinRouter = require("../routes/bitcoin.route");
 const ethereumRouter = require("../routes/ethereum.route");
